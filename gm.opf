@@ -1,0 +1,39 @@
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="b5cac904-9ff4-42da-91dd-270b086112a2">
+ <metadata xmlns:dc="http://purl.org/dc/elements/1.1/"xmlns:opf="http://www.idpf.org/2007/opf">
+ <dc:title>GitMagic</dc:title>
+ <dc:language>cs</dc:language>
+ <dc:creator opf:role="aut">Ben Lynn</dc:creator>
+ <meta name="cover" content="obalka" />
+</metadata>
+
+<manifest>
+ <item id="gm_obsah" media-type="application/x-dtbncx+xml" href="gm.ncx"/>
+ <item id="obalka" media-type="image/png" href="git.png"/>
+ <item id="obsah" media-type="application/xhtml+xml" href="tmp/obsah.html">Obsah</item>
+ <item id="item1" media-type="application/xhtml+xml" href="tmp/gitmagic-1-uvod.html">Úvod</item>
+ <item id="item2" media-type="application/xhtml+xml" href="tmp/gitmagic-2-zakladni-triky.html">Základní triky</item>
+ <item id="item3" media-type="application/xhtml+xml" href="tmp/gitmagic-3-klonovani-vsude-kolem.html">Klonování všude kolem</item>
+ <item id="item4" media-type="application/xhtml+xml" href="tmp/gitmagic-4-vetvici-magie.html">Větvící magie</item>
+ <item id="item5" media-type="application/xhtml+xml" href="tmp/gitmagic-5-lekce-z-historie.html">Lekce z historie</item>
+ <item id="item6" media-type="application/xhtml+xml" href="tmp/gitmagic-6-velmistrovstvi-v-gitu.html">Velmistroství v gitu</item>
+ <item id="item7" media-type="application/xhtml+xml" href="tmp/gitmagic-7-tajemstvi-odhalena.html">Tajemství odhalena</item>
+ <item id="item8" media-type="application/xhtml+xml" href="tmp/gitmagic-8-nedostatky-gitu.html">Nedostatky gitu</item>
+</manifest>
+
+<spine toc="gm_obsah">
+ <itemref idref="obalka"/>
+ <itemref idref="obsah"/>
+ <itemref idref="item1"/>
+ <itemref idref="item2"/>
+ <itemref idref="item3"/>
+ <itemref idref="item4"/>
+ <itemref idref="item5"/>
+ <itemref idref="item6"/>
+ <itemref idref="item7"/>
+ <itemref idref="item8"/>
+</spine>
+
+<guide>
+	<reference type="toc" title="Obsah" href="tmp/obsah.html">Obsah</reference>
+</guide>
+</package>

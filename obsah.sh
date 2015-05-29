@@ -12,15 +12,16 @@ echo '<html>
 </head>
 <body>
 <h1>GitMagic</h1>
-' > $OUT/gm.html
+<ul>
+
+' > $OUT/obsah.html
 
 for foo in $OUT/gitmagic-*.html
 do
-	cat $foo | \
-	sed /'<html>'/,/'<body>'/d |\
-	sed /'<\/body>'/,/'<\/html>'/d \
-		>> $OUT/gm.html
+	FILE=`basename $foo`
+	TITLE=`grep '<title>' $foo | sed 's/.*\(GitMagic.*\)/\1/'`
+	echo "<li><a href=\"$FILE\">$TITLE</a></li>" >> $OUT/obsah.html
 done
 
-echo '</body>
-</html>' >> $OUT/gm.html
+echo '</ul></body>
+</html>' >> $OUT/obsah.html
